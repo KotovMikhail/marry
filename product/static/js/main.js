@@ -177,7 +177,7 @@ $(document).ready(function () {
 		prevArrow: '.reviews-slider__prev',
 		nextArrow: '.reviews-slider__next',
 		responsive: [{
-			breakpoint: 1024,
+			breakpoint: 1000,
 			settings: {
 				slidesToShow: 1,
 				slidesToScroll: 1,
@@ -242,16 +242,14 @@ $("form").on("submit", function () {
 		}
 	});
 	if ($(formID).valid()) {
-		$.ajax({
-			type: "POST",
-			url: "mail.php",
-			data: th.serialize()
-		}).done(function () {
-			console.log('test');
-			console.log($(this));
-			$(formID).hide();
-			$(formID).parent().find('.success-form').addClass('success-show')
-		});
+		// $.ajax({
+		// 	type: "POST",
+		// 	url: "mail.php",
+		// 	data: th.serialize()
+		// }).done(function () {
+			$(this).hide();
+			$(this).parent().find('.success-form').addClass('success-show')
+		// });
 
 	}
 	return false;
