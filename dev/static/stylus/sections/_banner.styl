@@ -1,0 +1,26 @@
+.banner
+	background url('../img/content/banner.jpg') center no-repeat
+	background-size cover
+
+	.container
+		display flex
+		justify-content center
+		align-items flex-end
+		height 550px
+
+	&:after
+		position absolute
+		right 0
+		bottom 0
+		left 0
+		display block
+		height 21px
+		content ''
+		background url('../img/general/wave-bottom-white.png') 0 0 repeat-x
+
+.banner-text
+	font-family titleFont
+	font-size 36px
+	line-height 1.2
+	text-align center
+	color #fff

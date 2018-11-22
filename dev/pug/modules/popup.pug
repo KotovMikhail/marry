@@ -1,0 +1,17 @@
+.popup-form#feedback.mfp-hide
+	#close-popup x
+	.form#form--feedback
+		form(action="https://echo.htmlacademy.ru" method="post")#form--feedback
+			p.form-title
+				| Консультация свадебного специалиста с опытом организации 
+				b более 200 свадеб!
+			.form-group.form-group--name.form-group--icon
+				input(type="text" name="name" placeholder="Ваше имя").g-input
+			.form-group.form-group--phone.form-group--icon
+				input(type="text" name="phone" placeholder="Номер телефона").g-input
+			.form-group
+				input(type="submit" value="Получить консультацию").g-btn
+
+		.success-form
+			span.success-text__bold Ваша заявки принята!
+			span.success-text В ближайшее время мы с вами свяжемся.

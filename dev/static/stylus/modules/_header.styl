@@ -1,0 +1,55 @@
+header
+	height 70px
+	background mainColor url('../img/general/header-bg.jpg') center no-repeat
+	color white
+
+	.container
+		padding 15px 10px
+		height 70px
+		display flex
+		flex-wrap wrap
+		justify-content space-between
+		align-items flex-start
+
+.header-logo
+	position relative
+	top -10px
+	z-index 1
+
+.header-nav__title
+	color white
+
+.header-about
+	span
+		display block
+		font-size 16px
+
+.header-company__name
+	font-family boldFont
+	font-size 16px
+	margin-bottom 5px
+	text-transform uppercase
+
+.header-phone
+	position relative
+	padding-left 35px
+
+	&:before
+		position absolute
+		top 50%
+		left 0
+		display block
+		width 25px
+		height 25px
+		margin-top -12px
+		content ''
+		background url('../img/svg/phone.svg') 0 0 no-repeat
+		background-size auto auto
+		background-size 100%
+	a
+		font-size 20px
+		font-family boldFont
+		display block
+		color white
+		&:first-child
+			margin-bottom 5px

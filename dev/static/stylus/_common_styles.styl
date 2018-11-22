@@ -1,0 +1,119 @@
+.sandwich
+	position relative
+	display inline-block
+	vertical-align middle
+	margin-right 15px
+	width 50px
+	height 50px
+	border 2px solid white
+	border-radius 50px
+	cursor pointer
+
+	&.active
+		.sandwich-line--top
+			top 21px
+			transform rotate(45deg)
+
+		.sandwich-line--middle
+			opacity 0
+
+		.sandwich-line--bottom
+			top 21px
+			transform rotate(-45deg)
+
+
+	&-line
+		position absolute
+		left 50%
+		margin-left -12.5px
+		display block
+		width 25px
+		height 4px
+		background-color white
+		transition all linear .5s
+
+		&--top
+			top 13px
+		&--middle
+			top 21px
+			opacity 1
+		&--bottom
+			top 29px
+
+.g-btn
+	line-height 48px
+	display inline-block
+	height 50px
+	padding 0 30px
+	cursor pointer
+	transition all linear .3s
+	color #fff
+	border 1px solid #fff
+	border-radius 30px
+	background-color #007558
+
+	&--small
+		height 30px
+		line-height 26px
+		padding 0 20px
+		border-radius 20px
+
+	&:hover
+		background-color white
+		color mainColor
+		border-color mainColor
+
+.g-section-title
+	margin-bottom 30px
+	font-family titleFont
+	font-size 42px
+	text-align center
+	color mainColor
+
+	&.g-section-title--white
+		color white
+
+.instagramm-text
+	position relative
+	display inline-block
+	vertical-align middle
+	font-size 24px
+	font-family boldFont
+	color mainColor
+
+	&:before
+		display inline-block
+		width 35px
+		height 35px
+		margin-right 15px
+		content ''
+		vertical-align middle
+		background url('../img/svg/instagram-color.svg') 0 0 no-repeat
+
+
+.success-form
+	position relative
+	display none
+	font-size 28px
+	line-height 1.2
+	padding-top 180px
+
+	&.success-show
+		display block
+
+	&:before
+		content ''
+		display block
+		position absolute
+		top -10px
+		left 50%
+		margin-left -90px
+		width 180px
+		height 180px
+		background url('../img/general/success-form.jpg') 0 0 no-repeat
+		background-size 100%
+		
+.success-text__bold 
+	display block
+	font-family boldFont
+
