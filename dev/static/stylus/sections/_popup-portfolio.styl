@@ -1,0 +1,203 @@
+
+
+.popup-portfolio 
+    position relative
+    width 95%
+    max-width 1000px
+    margin 50px auto
+    padding 30px
+    border-radius 15px
+    background url('../img/general/port-popup-bg.jpg') 0 0 no-repeat
+    background-size cover
+
+
+.popup-portfolio .mfp-close 
+    display none
+
+
+.portfolio-date-slider 
+    position relative
+    float left
+    width 100%
+    max-width 260px
+    padding 30px 0
+
+
+.portfolio-current-date-slider 
+    position relative
+    float right
+    width 100%
+    max-width 650px
+
+
+.date-slider__item 
+    margin 15px 0
+    padding 10px
+    color #fff
+    border-radius 10px
+    background-color #007558
+
+
+.date-slider__item.slick-current 
+    opacity .6
+
+
+.date-slider__name 
+    font-family 'PTSansBold', Arial, sans-serif
+
+    display block
+    margin-bottom 5px
+
+
+.date-slider__controls 
+    position absolute
+    z-index 10
+    left 50%
+
+    width 30px
+    height 30px
+    margin-left -15px
+    cursor pointer
+
+
+.date-slider__controls--prev 
+    top 0
+    background url('../img/general/port-arrow-up.png') 0 0 no-repeat
+
+
+.date-slider__controls--next 
+    bottom 0
+    background url('../img/general/port-arrow-down.png') 0 0 no-repeat
+
+
+.portfolio-main-slider 
+    position relative
+
+
+.portfolio-main-slider__item 
+    height 530px
+
+
+.portfolio-main-slider__photo 
+    height 420px
+    background-size cover
+
+
+.portfolio-main-slider__text 
+    font-size 15px
+
+    position absolute
+    z-index 1
+    right 0
+    bottom 0
+    left 0
+    height 110px
+    padding 10px
+    color #fff
+    background-color #000
+
+
+.portfolio-descr__title 
+    font-size 24px
+
+    display block
+    margin-bottom 10px
+
+
+.portfolio-main-slider__controls 
+    position absolute
+    z-index 1000
+    top 35%
+
+    width 30px
+    height 30px
+    cursor pointer
+
+
+.portfolio-main-slider__controls--prev 
+    left 10px
+    background url('../img/general/port-arrow-left.png') 0 0 no-repeat
+
+
+.portfolio-main-slider__controls--next 
+    right 10px
+    background url('../img/general/port-arrow-right.png') 0 0 no-repeat
+
+
+.portfolio-main-prev-slider 
+    position relative
+    padding 0 30px
+
+
+.main-prev-slider__controls 
+    position absolute
+    top 0
+    bottom 0
+    width 30px
+    height 80px
+    cursor pointer
+    background-color #007558
+
+
+.main-prev-slider__controls
+	
+	&:before
+		position absolute
+		top 50%
+		left 50%
+		display block
+		width 16px
+		height 16px
+		margin-top -8px
+		margin-left -8px
+		content ''
+
+
+.main-prev-slider__controls--prev 
+    left 0
+
+
+.main-prev-slider__controls--prev
+	&:before
+		background url('../img/svg/arrow-left.svg') 0 0 no-repeat
+		background-size 100%
+
+
+.main-prev-slider__controls--next 
+    right 0
+
+
+.main-prev-slider__controls--next
+	&:before
+		background url('../img/svg/arrow-right.svg') 0 0 no-repeat
+		background-size 100%
+
+
+.portfolio-main-prev__item 
+    position relative
+    width 120px
+    height 80px
+    background-size cover
+
+
+.portfolio-main-prev__item
+	&:after
+		position absolute
+		top 0
+		right 0
+		bottom 0
+		left 0
+		display block
+
+		content ''
+		background-color rgba(0, 0, 0, .5)
+
+
+.portfolio-main-prev__item.slick-current 
+    opacity .5
+
+
+.portfolio-main-prev__item.slick-current
+	&:after
+    	display none
+
